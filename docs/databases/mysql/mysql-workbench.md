@@ -61,7 +61,7 @@ The first step after running MySQL Workbench is to add your Linode as a database
 
     * Connection Method -- Set this to "Standard TCP/IP over SSH.
 
-    * SSH Hostname -- This is the IP address of your Linode.  If you use a non-standard port (other than 22), add the IP address after the port number, separated with a colon.
+    * SSH Hostname -- This is the IP address of your Linode.  If you use a non-standard port (other than 22), add that port number after the IP address, separated with a colon.
 
     * SSH Password -- You can store your password for the SSH account here if you want to.  If you don't provide it, then Workbench will prompt for it each time.
 
