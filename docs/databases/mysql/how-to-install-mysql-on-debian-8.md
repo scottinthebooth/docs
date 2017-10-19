@@ -4,9 +4,9 @@ author:
   email: docs@linode.com
 description: 'Getting started with MySQL on Debian 8'
 keywords: 'MySQL on Linux,Debian 8,Debian,cloud,cloud hosting,Linux,MySQL,database,MariaDB,install MySQL,secure MySQL,mysqltuner'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['databases/mysql/debian-7-wheezy/','databases/mysql/mysql-relational-databases-debian-8/']
-modified: Wednesday, August 26th 2015
+modified: Wednesday, August 26th, 2015
 modified_by:
   name: Linode
 published: 'Friday, June 12th, 2015'
@@ -19,7 +19,11 @@ external_resources:
  - '[MySQL Tuner Tutorial](http://www.debiantutorials.com/tuning-mysql-with-mysqltuner-to-increase-efficiency-and-performance)'
 ---
 
+![How to Install MySQL on Debian 8](/docs/assets/how-to-install-mysql-on-debian-8.jpg "How to Install MySQL on Debian 8")
+
 MySQL is a popular database management system used for web and server applications. This guide will introduce how to install, configure and manage MySQL on a Linode running Debian 8 (Jessie).
+
+Large MySQL databases can require a considerable amount of memory. For this reason, we recommend using a [high memory Linode](https://www.linode.com/pricing#high-memory) for such setups. 
 
 {: .note}
 >
@@ -50,7 +54,7 @@ During the installation process, you will be prompted to set a password for the 
 
 ![Setting the MySQL root password in Debian.](/docs/assets/mysql-rootpw-debian.png)
 
-MySQL will bind to localhost (127.0.0.1) by default. Please reference our [MySQL remote access guide](mysql-ssh-tunnel) for information on connecting to your databases using SSH.
+MySQL will bind to localhost (127.0.0.1) by default. Please reference our [MySQL remote access guide](/docs/databases/mysql/create-an-ssh-tunnel-for-mysql-remote-access) for information on connecting to your databases using SSH.
 
 {: .note}
 >
@@ -62,7 +66,7 @@ Run the `mysql_secure_installation` script to address several security concerns 
 
     sudo mysql_secure_installation
 
-You will be given the choice to change the MySQL root password, remove anonymous user accounts, disable root logins outside of localhost, and remove test databases. It is recommended that you answer yes to these options. You can read more about the script in in the [MySQL Reference Manual](https://dev.mysql.com/doc/refman/5.0/en/mysql-secure-installation.html).
+You will be given the choice to change the MySQL root password, remove anonymous user accounts, disable root logins outside of localhost, and remove test databases. It is recommended that you answer yes to these options. You can read more about the script in the [MySQL Reference Manual](https://dev.mysql.com/doc/refman/5.0/en/mysql-secure-installation.html).
 
 ## Using MySQL
 
@@ -117,16 +121,16 @@ The standard tool for interacting with MySQL is the `mysql` client which install
 1.  In the example below, `testdb` is the name of the database, `testuser` is the user, and `password` is the user's password.
 
         create database testdb;
-        create user 'testuser'@localhost identified by 'password';
+        create user 'testuser'@'localhost' identified by 'password';
         grant all on testdb.* to 'testuser';
 
     You can shorten this process by creating the user *while* assigning database permissions:
 
         create database testdb;
         grant all on testdb.* to 'testuser' identified by 'password';
-    
+
 2.  Then exit MySQL.
-    
+
         exit
 
 ### Create a Sample Table
@@ -141,7 +145,7 @@ The standard tool for interacting with MySQL is the `mysql` client which install
         create table customers (customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, first_name TEXT, last_name TEXT);
 
 3.  Then exit MySQL.
-    
+
         exit
 
 ## Reset the MySQL Root Password

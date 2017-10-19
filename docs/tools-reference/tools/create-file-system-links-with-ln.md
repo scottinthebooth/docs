@@ -4,16 +4,18 @@ author:
   email: docs@linode.com
 description: 'Create hard and symbolic links with ln on Linux Systems.'
 keywords: 'linux,common commands,unix,command line,file systems'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['linux-tools/common-commands/ln/']
 modified: Tuesday, May 17th, 2011
 modified_by:
-  name: Amanda Folson
+  name: Linode
 published: 'Monday, October 11th, 2010'
 title: Create File System Links with ln
 ---
 
 The `ln` command creates "meta objects" in the file system that link to other objects located on the file system. Links may point to files, directories, or other links. Although improper use can lead to disorganization and confusion, links are useful for providing access to files and file system organization.
+
+![Title graphic](/docs/assets/create_file_system_links_with_ln_smg.png)
 
 ## File System Linking
 

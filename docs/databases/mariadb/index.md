@@ -3,11 +3,14 @@ author:
   name: Linode
   email: docs@linode.com
 keywords: 'mariadb, database'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-modified: Thursday, June 12th, 2014
-modified_by:
-  name: Linode
+description: 'Learn how to use, install, configure and perform tasks on database management platform MariaDB in these tutorials.'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 'Thursday, June 12th, 2014'
-title: MariaDB
+title: MariaDB Tutorials, Installation Guides, Resources – Linode
 ---
-MariaDB is a community-developed, open-source, drop-in replacement for MySQL.
+
+MariaDB is a community-developed, open-source, drop-in replacement for the Relational Database Management System (RDBMS), MySQL. Its high compatibility with MySQL affords MariaDB library binary equivalency and exact-matching API and commands. It replaces MySQL's InnoDB storage engine with both XtraDB and transactional/non-transactional Aria storage engines.
+
+According to [MariaDB.com](https://mariadb.com/), the RDBMS renders "enterprise-grade performance, industry-leading security, world-class support and modern, unique architecture, extensible at every layer so users and the community can extend functionality to meet unique needs."
+
+## MariaDB Tutorials:

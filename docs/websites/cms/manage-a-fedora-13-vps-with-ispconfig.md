@@ -1,17 +1,17 @@
 ---
 deprecated: true
 author:
-  name: Amanda Folson
+  name: Linode
   email: docs@linode.com
-description: 'Installing and configuring the ISPConfig control panel to maintain your VPS.'
+description: 'Installing and configuring the ISPConfig control panel to maintain your Linode.'
 keywords: 'ispconfig,control panel,cpanel,plesk,gui'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['web-applications/control-panels/ispconfig/fedora-13/']
 modified: Monday, October 8th, 2012
 modified_by:
   name: Linode
 published: 'Monday, October 25th, 2010'
-title: Manage a Fedora 13 VPS with ISPConfig
+title: Manage a Fedora 13 Linode with ISPConfig
 ---
 
 
@@ -97,7 +97,7 @@ Installing fail2ban is entirely optional, however ISPConfig can manage this serv
 
     yum install fail2ban
 
-More information regarding fail2ban can be found in our [fail2ban guide](/docs/security/fail2ban).
+More information regarding fail2ban can be found in our [fail2ban guide](/docs/security/using-fail2ban-for-security).
 
 Installing ISPConfig
 --------------------
@@ -121,7 +121,7 @@ You will now need to restart Apache. Issue the following command:
 
 Once it has completed, you may login to the control panel. By default, ISPConfig runs on port 8080, so you may find it at `http://12.34.56.78:8080/`. Replace `12.34.56.78` with your Linode's IP. The default login uses "admin" as the username and "admin" as the password. You will want to change these to prevent someone from accessing your system.
 
-Congratulations! You now have ISPConfig installed on your Fedora 13 VPS. You are highly encouraged to see the links in the "More Information" section to help you install extra applications that may help you manage your system better.
+Congratulations! You now have ISPConfig installed on your Fedora 13 Linode. You are highly encouraged to see the links in the "More Information" section to help you install extra applications that may help you manage your system better.
 
 Monitor for Software Updates and Security Notices
 -------------------------------------------------

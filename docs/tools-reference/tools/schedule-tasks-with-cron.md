@@ -4,7 +4,7 @@ author:
   email: docs@linode.com
 description: 'Using cron to run programs at specified times on your Linux server.'
 keywords: 'cron,cron tutorial,crontab,cron linux,administration,linux,systems,automation'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['linux-tools/utilities/cron/']
 modified: Tuesday, May 17th, 2011
 modified_by:
@@ -21,6 +21,8 @@ external_resources:
 Since `cron` is a standard component of modern Linux systems, this documentation is applicable regardless of your choice in distribution. If you are new to Linode we strongly recommend consulting the [getting started guide](/docs/getting-started/) and the [beginners guide](/docs/beginners-guide) to facilitate the setup and configuration of your server. If you're new to using Linux in general, you may find the [introduction to Linux concepts guide](/docs/tools-reference/introduction-to-linux-concepts) helpful.
 
 Before we get started, there are a couple of terms associated with `cron` that are non-obvious. First, the job or **cronjob** refers to the task, script, or application that `cron` runs. Second, **crontab** refers to each user's list of cronjobs.
+
+![Title graphic](/docs/assets/schedule_tasks_with_cron_smg.png)
 
 ## Using crontab
 

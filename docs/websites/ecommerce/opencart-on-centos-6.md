@@ -1,14 +1,14 @@
 ---
 author:
-  name: Amanda Folson
+  name: Linode
   email: docs@linode.com
 description: 'Set up and manage an online storefront with OpenCart.'
 keywords: 'opencart,ecommerce,commerce,store,centos'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['web-applications/e-commerce/opencart/centos-6/']
 modified: Tuesday, September 20th, 2011
 modified_by:
-  name: Amanda Folson
+  name: Linode
 published: 'Tuesday, September 20th, 2011'
 title: OpenCart on CentOS 6
 ---

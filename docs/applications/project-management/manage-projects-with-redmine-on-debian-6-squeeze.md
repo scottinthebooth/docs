@@ -3,9 +3,9 @@ deprecated: true
 author:
   name: Linode
   email: docs@linode.com
-description: 'Installing and configuring Redmine, an open source project management system on a Debian 6 (Squeeze) Linux VPS running nginx.'
+description: 'Installing and configuring Redmine, an open source project management system on a Debian 6 (Squeeze) Linode running nginx.'
 keywords: 'redmine,redmine debian 6,redmine linux,project management software,redmine postgresql'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['web-applications/project-management/redmine/debian-6-squeeze/']
 modified: Tuesday, June 7th, 2011
 modified_by:
@@ -64,7 +64,7 @@ Proceed to the [Phusion Passenger](http://www.modrails.com/install.html) site an
 
     cd /opt
     wget http://rubyforge.org/frs/download.php/74471/passenger-3.0.5.tar.gz
-    tar xzvf passenger*.gz 
+    tar xzvf passenger*.gz
 
 Run the Phusion Passenger installer for Nginx:
 
@@ -266,7 +266,7 @@ Select "internet site" as the type of mail configuration to use:
 
 [![Exim general configuration on Debian 6.](/docs/assets/718-exim4-config-02.png)](/docs/assets/718-exim4-config-02.png)
 
-Specify your systems's fully qualified domain name as the system mail name:
+Specify your system's fully qualified domain name as the system mail name:
 
 [![Exim system mail name configuration on Debian 6.](/docs/assets/719-exim4-config-03.png)](/docs/assets/719-exim4-config-03.png)
 
@@ -375,6 +375,3 @@ More Information
 You may wish to consult the following resources for additional information on this topic. While these are provided in the hope that they will be useful, please note that we cannot vouch for the accuracy or timeliness of externally hosted materials.
 
 - [Redmine Guide](http://www.redmine.org/wiki/redmine/Guide)
-
-
-

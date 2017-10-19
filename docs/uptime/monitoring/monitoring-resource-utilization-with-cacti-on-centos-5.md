@@ -5,7 +5,7 @@ author:
   email: docs@linode.com
 description: 'Monitor resource usage through the powerful server monitoring tool Cacti on CentOS 5.'
 keywords: 'Cacti,CentOS,Monitoring,SNMP'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['server-monitoring/cacti/centos-5/']
 modified: Friday, April 29th, 2011
 modified_by:
@@ -160,7 +160,7 @@ Click "Settings" under "Configuration" in the left menu bar and set your "SNMP V
 
     php /usr/share/cacti/cmd.php 
 
-Since you want Cacti to collect data automatically, we'll use the "cron" tool to regularly poll for new data. Issue the following commands to to install cron and create a new cron, or regular scheduled task:
+Since you want Cacti to collect data automatically, we'll use the "cron" tool to regularly poll for new data. Issue the following commands to install cron and create a new cron, or regular scheduled task:
 
     yum install vixie-cron vim-minimal
     crontab -e

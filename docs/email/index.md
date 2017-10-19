@@ -3,15 +3,14 @@ author:
   name: Linode
   email: docs@linode.com
 keywords: 'linux mail server,email server,Citadel,Postfix,Courier,SMTP server'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-modified: 'Monday, August 4, 2014'
-modified_by: ' Alex Fornuto'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 title: Email Server Guides
 featured:
  - running-a-mail-server.md
  - email-with-postfix-dovecot-and-mysql.md
  - installing-mail-filtering-for-ubuntu-12-04.md
  - using-google-apps-for-email.md
+ - how-to-create-an-email-server-with-mail-in-a-box.md
 categories:
  - clients
  - postfix

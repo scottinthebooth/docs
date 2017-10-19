@@ -1,10 +1,11 @@
 ---
+deprecated: true
 author:
   name: Stan Schwertly
   email: docs@linode.com
 description: 'Get in-depth website visitor statistics with Piwik, a self-hosted, open source analytics solution on CentOS 5.'
 keywords: 'open source analytics,piwik centos 5,piwik,analytics,centos,tracking,statistics'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['web-applications/analytics/piwik/centos-5/']
 modified: Tuesday, January 28th, 2014
 modified_by:
@@ -121,6 +122,6 @@ When running software compiled or installed directly from sources provided by up
 Please monitor the Piwik security announcement posts, and development mailing lists to ensure that you are aware of all updates to the software and can upgrade appropriately or apply patches and recompile as needed:
 
 -   [Piwik Security Announcements](http://piwik.org/blog/category/security/)
--   [Piwik Mailing Lists](http://dev.piwik.org/trac#Mailinglists)
+-   [Piwik Mailing Lists](http://lists.piwik.org/mailman/listinfo)
 
 When upstream sources offer new releases, repeat the instructions for installing the Piwik software as needed. These practices are crucial for the ongoing security and functioning of your system.

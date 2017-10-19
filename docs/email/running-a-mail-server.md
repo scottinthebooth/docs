@@ -4,7 +4,7 @@ author:
   email: docs@linode.com
 description: 'Our guide to running a mail server on your Linode.'
 keywords: 'mail server,linode guide,running a mail server,linode quickstart guide'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['mailserver/']
 modified: Sunday, April 13th, 2014
 modified_by:
@@ -14,6 +14,8 @@ title: Running a Mail Server
 ---
 
 If you've followed along with the quick start guides up to this point, you've managed to [install Linux](/docs/getting-started), [secure your Linode](/docs/securing-your-server), and [start hosting a website](/docs/hosting-website). Now it's time to set up email. This guide explains how to install a mail server on your Linode and create mail accounts for your own domains. First, we'll help you decide whether to run your own mail server or let a third-party mail service handle it for you. Then we'll show you how a mail server works, present common mail server configurations, and provide basic instructions for getting a mail server up and running.
+
+![Running a Mail Server](/docs/assets/mail_server_tg.png "Running a Mail Server")
 
 ## Should You Run a Mail Server?
 
@@ -75,11 +77,11 @@ MTAs are responsible for handling SMTP connections to your Linode from both outs
 Here are the most popular MTA services available:
 
 -   [Courier Mail Server](http://www.courier-mta.org) comes with Courier-IMAP, which is the popular part of the Courier mail server suite, but Courier-MTA also includes mail relaying features. It's a simpler MTA but somewhat limited.
--   [Exim](http://www.exim.org) is modern and oriented towards flexibility. It's secure, but not quite as security-oriented as Postfix. It's very customizable, but is one of the most complex MTAs to configure. We have guides for [Exim on Ubuntu 12.04](/docs/email/exim/send-only-mta-ubuntu-12.04-precise-pangolin) and [Exim on Debian 6](/docs/email/exim/send-only-mta-debian-6-squeeze).
+-   [Exim](http://www.exim.org) is modern and oriented towards flexibility. It's secure, but not quite as security-oriented as Postfix. It's very customizable, but is one of the most complex MTAs to configure. We have guides for [Exim on Ubuntu 12.04](/docs/email/exim/send-only-mta-ubuntu-12-04-precise-pangolin) and [Exim on Debian 6](/docs/email/exim/send-only-mta-debian-6-squeeze).
 -   [Postfix](http://www.postfix.org) is part of our [recommended mail server build](/docs/email/postfix/email-with-postfix-dovecot-and-mysql). It's modern, security-oriented, and very flexible, although not quite as flexible as Exim. It is slightly simpler to set up than Exim.
 -   [Qmail](http://www.qmail.org/top.html) is one of the older modern MTAs and supports Maildir-style directories. It's still very popular, but is no longer supported.
 -   [Sendmail](http://www.sendmail.com/sm/open_source/) is a legacy MTA that still has a large following and good support. Don't expect the most modern options and security, though.
--   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10.04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra on CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
+-   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10-04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra on CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
 
 ### Mail Delivery Agents
 
@@ -103,13 +105,13 @@ Most servers and clients support both IMAP and POP3. POP3 clients connect to the
 
 Here are the most popular IMAP and POP3 servers available:
 
--   [Citadel](http://www.citadel.org) is an all-in-one mail service that includes mail, calendars, instant messaging, mailing lists, and other collaboration tools. It's open source and geared towards small and medium-sized organizations. We have guides for [Citadel on Ubuntu 12.04](/docs/email/citadel/ubuntu-12.04-precise-pangolin) and [Citadel on Debian 6](/docs/email/citadel/debian-6-squeeze).
+-   [Citad.l](http://www.citadel.org) is an all-in-one mail service that includes mail, calendars, instant messaging, mailing lists, and other collaboration tools. It's open source and geared towards small and medium-sized organizations. We have guides for [Citadel on Ubuntu 12.04](/docs/email/citadel/ubuntu-12-04-precise-pangolin) and [Citadel on Debian 6](/docs/email/citadel/debian-6-squeeze).
 -   [Courier](http://www.courier-mta.org) has a very popular IMAP server called [Courier IMAP](http://www.courier-mta.org/imap/). It's an all-in-one mail server software suite, but Courier IMAP can be installed by itself if that's the only part you need.
 -   [Cyrus](http://www.cyrusimap.org/index.php) is a modern, security-oriented IMAP/POP3 server designed to work on sealed servers where users do not log in directly.
 -   [DBMail](http://www.dbmail.org) is an open source project that stores mail in databases instead of flat files.
 -   [Dovecot](http://www.dovecot.org) is a lightweight, modern, and configurable mail server, and is part of our [recommended mail server build](/docs/email/postfix/email-with-postfix-dovecot-and-mysql).
 -   [Xmail](http://www.xmailserver.org) is a full-featured POP3 server, but does not support IMAP.
--   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10.04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
+-   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10-04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
 
 ## Building Your Mail Server
 
@@ -221,11 +223,11 @@ Webmail is a type of mail client that can be installed on your server and access
 
 Here are some of the most popular webmail clients:
 
--   [Citadel](http://www.citadel.org) is an all-in-one mail service that includes mail, calendars, instant messaging, mailing lists, and other collaboration tools. It's open source and geared towards small and medium-sized organizations. We have guides for [Citadel on Ubuntu 12.04](/docs/email/citadel/ubuntu-12.04-precise-pangolin) and [Citadel on Debian 6](/docs/email/citadel/debian-6-squeeze).
+-   [Citadel](http://www.citadel.org) is an all-in-one mail service that includes mail, calendars, instant messaging, mailing lists, and other collaboration tools. It's open source and geared towards small and medium-sized organizations. We have guides for [Citadel on Ubuntu 12.04](/docs/email/citadel/ubuntu-12-04-precise-pangolin) and [Citadel on Debian 6](/docs/email/citadel/debian-6-squeeze/).
 -   [Horde Webmail](http://www.horde.org/apps/webmail) is an open-source IMAP client paired with some additional functions like account management and calendars.
 -   [RoundCube](http://roundcube.net) is an IMAP client with modern functionality and a clean layout.
--   [SquirrelMail](http://squirrelmail.org) is a solid option, but has an older user interface.
--   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10.04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
+-   [SquirrelMail](http://squirrelmail.org) is a solid option, but has an older user interface. Visit our guide to [Install SquirrelMail on Ubuntu 16.04 or Debian 8](/docs/email/clients/install-squirrelmail-on-ubuntu-16-04-or-debian-8)
+-   [Zimbra](http://www.zimbra.com) is an all-in-one mail service that's much simpler to install than other options, but less customizable. We have guides for [Zimbra on Ubuntu 10.04](/docs/email/zimbra/install-zimbra-ubuntu-10-04-lucid), [Zimbra on Debian 6](/docs/email/zimbra/install-zimbra-debian-6-squeeze), and [Zimbra CentOS 5](/docs/email/zimbra/install-zimbra-centos-5).
 
 ### Extras
 

@@ -4,7 +4,7 @@ author:
   email: afornuto@linode.com
 description: 'Use IRC and GNU Screen to maintain persistent connections to IRC networks.'
 keywords: 'irssi,irc,oftc,freenode,real time,chat'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['communications/irc/irssi/']
 modified: Friday, January 9th, 2015
 modified_by:
@@ -24,7 +24,7 @@ external_resources:
 
 **Irssi** is a terminal-based chat client for real-time conversations over Internet Relay Chat (**IRC**). IRC is the common meeting ground for Linode users to exchange knowledge and troubleshoot issues in our public channel, **#linode** on **OFTC**.
 
-Irssi can run on Linux or MAC OS X, either from your local workstation or your Linode. If you are unfamiliar with using a Linux terminal, you may want to review the Linode Library guides [Using the Terminal](/docs/using-linux/using-the-terminal) and [Introduction to Linux Concepts](/docs/tools-reference/introduction-to-linux-concepts). Additionally, it is assumed that you have followed our [Getting Started Guide](/docs/getting-started/) if you intend to run Irssi on your Linode.
+Irssi can run on Linux or MAC OS X, either from your local workstation or your Linode. If you are unfamiliar with using a Linux terminal, you may want to review the Linode guides [Using the Terminal](/docs/using-linux/using-the-terminal) and [Introduction to Linux Concepts](/docs/tools-reference/introduction-to-linux-concepts). Additionally, it is assumed that you have followed our [Getting Started Guide](/docs/getting-started/) if you intend to run Irssi on your Linode.
 
 ## Prerequisites
 

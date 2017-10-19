@@ -1,11 +1,10 @@
 ---
 author:
-  name: Francis McNamee
-  email: --
-description: 'Enhance your server''s security through the use of TCP wrasppers'
+  name: Linode Community
+  email: docs@linode.com
+description: 'Enhance your server''s security through the use of TCP wrappers'
 keywords: 'tcp wrappers,security,firewall,acl,access control'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-alias: ['web-applications/game-servers/minecraft-ubuntu12-04/']
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 published: 'Thursday, April 30th, 2015'
 modified: Thursday, April 30th, 2015
 modified_by:
@@ -18,6 +17,8 @@ contributor:
 *This is a Linode Community guide. [Write for us](/docs/contribute) and earn $250 per published guide.*
 
 <hr>
+
+![Protecting your Linode with TCP Wrappers](/docs/assets/protecting-your-linode-with-tcp-wrappers.png "Protecting your Linode with TCP Wrappers")
 
 TCP wrappers are a host-based access control system. They are used to prevent unauthorized access to your server by allowing only specific clients access to services running on your server.
 
@@ -54,7 +55,7 @@ TCP wrappers rely on two files in order to work: `/etc/hosts.allow` and `/etc/ho
 
 ### Editing hosts.allow and hosts.deny
 
-You can edit hosts.allow and hosts.deny with any text editor you like. Open the `hosts.deny` file in your perfered text editor. If you've never opened *hosts.deny* before it will look something like this:
+You can edit hosts.allow and hosts.deny with any text editor you like. Open the `hosts.deny` file in your preferred text editor. If you've never opened *hosts.deny* before it will look something like this:
 
 {: .file}
 /etc/hosts.deny

@@ -4,7 +4,7 @@ author:
   email: docs@linode.com
 description: Use the sort and uniq Linux utilities to manage and order
 keywords: 'linux,common commands,sort,uniq,shell,bash'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['linux-tools/common-commands/sort-uniq/']
 modified: Tuesday, April 19th, 2011
 modified_by:
@@ -14,6 +14,8 @@ title: Manipulate Lists with sort and uniq
 ---
 
 The Linux utilities `sort` and `uniq` are useful for ordering and manipulating data in text files and as part of shell scripting. The `sort` command takes a list of items and sorts them alphabetically and numerically. The `uniq` command takes a list of items and removes adjacent duplicate lines. Though narrow in their focus, both of these tools are useful in a number of different command line operations.
+
+![Title graphic](/docs/assets/manipulate_lists_with_sort_and_uniq_smg.png)
 
 ## Usage
 

@@ -4,16 +4,16 @@ author:
   email: docs@linode.com
 description: How to retain Disks with the Linode Images service
 keywords: 'linode Images, imagize'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['linode-images/']
-modified: Tuesday, June 2nd, 2015
+modified: Friday, September 8th, 2017
 modified_by:
   name: Linode
 published: 'Thursday, September 25th, 2014'
 title: Linode Images
 ---
 
-*Linode Images* allows you to take snapshots of your disks, and then deploy them to any Linode under your account. This can be useful for bootstrapping a master image for a large deployment, or retaining a disk for a configuration that you may not need running, but wish to return to in the future. Linode Images will be retained whether or not you have an active Linode on your account, which also makes them useful for long term storage of a private template that you may need in the future. There is no additional charge to store images for Linode users, with a limit of 2GB per Image, with a total of 10GB total Image storage and 100 Images per account.
+*Linode Images* allows you to take snapshots of your disks, and then deploy them to any Linode under your account. This can be useful for bootstrapping a master image for a large deployment, or retaining a disk for a configuration that you may not need running, but wish to return to in the future. Linode Images will be retained whether or not you have an active Linode on your account, which also makes them useful for long term storage of a private template that you may need in the future. There is no additional charge to store Images for Linode users, with a limit of 2GB per Image and 3 Images per account.
 
 {: .note}
 >
@@ -28,7 +28,7 @@ Linode Images captures an exact copy of your disk at the moment when the process
 
 1.  Navigate to your Linode Dashboard and select the disk that you wish to freeze from the **Disks** list.
 
-2.  On the **Edit Disk** page, click the **Imagize Image** button.
+2.  On the **Edit Disk** page, click the **Create Image** button.
 
 	[![Edit Disk](/docs/assets/edit-disk-image.png)](/docs/assets/edit-disk-image.png)
 
@@ -36,12 +36,12 @@ Linode Images captures an exact copy of your disk at the moment when the process
 
 	[![Imagize Image](/docs/assets/imagize-image.png)](/docs/assets/imagize-image.png)
 
-4.  Once you click the Imagize button, your image will be frozen for later use. You can view the progress on the Dashboard under the Host Job Queue.
+4.  Once you click the Create Image button, your image will be frozen for later use. You can view the progress on the Dashboard under the Host Job Queue.
 
 	[![Host Job Queue](/docs/assets/host-job-queue.png)](/docs/assets/host-job-queue.png)
 
  {: .note}
->Linode Images are limited to 2048MB of data per disk.  You will need to ensure that that data within your disk does not exceed this size limit.
+>Linode Images are limited to 2048MB of data per disk.  You will need to ensure that data within your disk does not exceed this size limit.
 
 Once the job in the host queue has completed, your Linode's disk has been captured and stored.
 
@@ -67,10 +67,15 @@ Deploying one of your saved images to any Linode under your account is a simple 
 
 1.  Navigate to the Dashboard of the Linode you wish to deploy your image to.
 
-2.  Click the **Deploy a Linux Distribution** link and select your image from the drop down list, under the **Images** heading.
+2.  Click the **Deploy an Image** link and select your image from the drop-down list, under the **Dashboard** heading.
 
-	[![Deploy a Distribution](/docs/assets/deploy-a-distro.png)](/docs/assets/deploy-a-distro.png)
+    {: .note}
+    >If you are deploying a recently deleted Linode's disks (which are automatically saved) then the image will be at   the bottom of the drop down list.
 
-3.  Select your desired disk size and set your root password, then click Deploy to create a configuration profile with your saved disk.
+    [![Deploy an Image Link](/docs/assets/deploy-an-image2.png)](/docs/assets/deploy-an-image2.png)
+
+3.  Select your desired disk size and set your root password, then click **Deploy** to create a configuration profile with your saved disk. If this is an image you made with a root password previously, you can leave it blank to keep the old one.
+
+    [![Deploy a Distribution](/docs/assets/deploy-a-distro.png)](/docs/assets/deploy-a-distro.png)
 
 Once you've completed these steps, your saved image will be deployed on your new Linode.

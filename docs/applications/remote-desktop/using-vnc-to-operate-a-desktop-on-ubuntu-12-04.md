@@ -1,10 +1,11 @@
 ---
+deprecated: true
 author:
   name: Alex Fornuto
   email: afornuto@linode.com
 description: How to install and connect to a desktop environment on your Linode
 keywords: 'vnc,remote desktop,ubuntu,12.04'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['remote-desktops/vnc-desktop-ubuntu-12-04/']
 modified: Thursday, August 21, 2014
 modified_by:
@@ -16,7 +17,7 @@ external_resources:
  - '[RealVNC](https://www.realvnc.com/)'
 ---
 
-This guide details how to install a graphic desktop environment on your Linode running Ubuntu 12.04, and connect to it from your local computer using VNC.
+This guide details how to install a graphic desktop environment on your Linode running Ubuntu 12.04 and connect to it from your local computer using VNC.
 
 ## Installing a Desktop and VNC on your Linode
 
@@ -56,7 +57,7 @@ The default VNC connection is unencrypted. In order to secure your passwords and
 
     [![Adding a forwarded port to PuTTY.](/docs/assets/1648-vnc-putty-1.png)](/docs/assets/1648-vnc-putty-1.png)
 
-2.  Return to the 'Session' screen and enter your Linode's hostname or IP address, and a title for your session.  Click save to save your settings for future use, and then click open to initiate your SSH tunnel.
+2.  Return to the 'Session' screen. Enter your Linode's hostname or IP address and a title for your session.  Click save to save your settings for future use, and then click open to initiate your SSH tunnel.
 
 3.  Launch the VNC server manually to test your connection. You will need to specify a password to use:
 
@@ -71,7 +72,7 @@ The default VNC connection is unencrypted. In order to secure your passwords and
 
 While there are many options for OS X and Windows, this guide will use [RealVNC Viewer](http://www.realvnc.com/download/viewer/).
 
-1.  After installing and opening the viewer, connect with your VNC client to the localhost:
+1.  After installing and opening the viewer, connect to the localhost through your VNC client :
 
     [![Connecting through an SSH tunnel.](/docs/assets/1647-vnc-5.png)](/docs/assets/1647-vnc-5.png)
 
@@ -79,7 +80,7 @@ While there are many options for OS X and Windows, this guide will use [RealVNC 
 
     [![VNC Security Warning.](/docs/assets/1656-vnc-2-2.png)](/docs/assets/1656-vnc-2-2.png)
 
-3.  You will be prompted to enter the password you specified in step four of [the previous section](#installing-a-desktop-and-vnc-on-your-linode).
+3.  You will be prompted to enter the password you specified in Step 4 of [the previous section](#installing-a-desktop-and-vnc-on-your-linode).
 
     [![The VNC password prompt.](/docs/assets/1657-vnc-3-2.png)](/docs/assets/1638-vnc-3.png)
 
@@ -97,7 +98,7 @@ There are a variety of VNC clients available for Ubuntu desktops. You can find t
 
     [![The Remmina Software.](/docs/assets/1640-vnc-ubuntu-1.png)](/docs/assets/1640-vnc-ubuntu-1.png)
 
-2.  Click the button to `Create a new remote desktop profile`. Name your profile, specify the VNC protocol, and enter localhost :1 in the server field. Be sure to include the`:1` in the `Server` section. In the password section fill in the password you specified in step four of [the previous section](#installing-a-desktop-and-vnc-on-your-linode):
+2.  Click the button to `Create a new remote desktop profile`. Name your profile, specify the VNC protocol, and enter localhost :1 in the server field. Be sure to include the`:1` in the `Server` section. In the password section fill in the password you specified in Step 4 of [the previous section](#installing-a-desktop-and-vnc-on-your-linode):
 
     [![.](/docs/assets/1641-vnc-ubuntu-2.png)](/docs/assets/1641-vnc-ubuntu-2.png)
 
@@ -115,7 +116,7 @@ In the next few steps we'll configure VNC to launch the full Gnome desktop.
 
         vncserver -kill :1
 
-2.  In your preferred text editor, open the xstartup file in your home folder, under the `.vnc` directory:
+2.  In your preferred text editor, open the xstartup file in your home folder under the `.vnc` directory:
 
     {: .file-excerpt }
     ~/.vnc/xstartup

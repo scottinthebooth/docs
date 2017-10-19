@@ -5,7 +5,7 @@ author:
   email: docs@linode.com
 description: 'Instructions for configuring your Linode to run a custom compiled kernel with PV-GRUB.'
 keywords: 'compile kernel,kernel compiling,pv-grub,pvgrub,custom linux kernel,custom linode'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['platform/custom-kernels-distros/run-a-custom-compiled-kernel-with-pvgrub/',  'custom-instances/pv-grub-custom-compiled-kernel/']
 modified: Thursday, June 19th, 2014
 modified_by:
@@ -79,7 +79,7 @@ Changes to the kernel's configuration can be made with the `menuconfig` command.
 
     make menuconfig
 
-Once your configuration options are set, exit the configuration interface and answer "y" when asked whether you would like to save save your new kernel configuration.
+Once your configuration options are set, exit the configuration interface and answer "y" when asked whether you would like to save your new kernel configuration.
 
 ### Build the Kernel
 

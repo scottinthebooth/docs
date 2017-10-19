@@ -5,7 +5,7 @@ author:
   email: docs@linode.com
 description: 'Using Ikiwiki on Ubuntu 9.10 (Karmic) to power a standard wiki implementation.'
 keywords: 'ikiwiki,ubuntu,wiki,perl,git,markdown,karmic'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['web-applications/wikis/ikiwiki/ubuntu-9-10-karmic/']
 modified: Friday, April 29th, 2011
 modified_by:
@@ -75,7 +75,7 @@ This will ask you a series of questions about file locations and the revision co
 
 In this example, `example` is the machine's hostname, `username` is the admin user specified in the setup process, and `wiki` is the name of the wiki you specified during setup. You will need to configure your web server to serve files in `~/public_html/wiki` before this wiki will be accessible.
 
-While the auto-setup script is great for getting up and running in a matter of moments, you are encouraged to examine and edit the the config file `~/wiki.setup` as needed. If the automatic wiki setup is not ideal for your use case, we recommend manual configuration.
+While the auto-setup script is great for getting up and running in a matter of moments, you are encouraged to examine and edit the config file `~/wiki.setup` as needed. If the automatic wiki setup is not ideal for your use case, we recommend manual configuration.
 
 Manual Ikiwiki Configuration
 ----------------------------

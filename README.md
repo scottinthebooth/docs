@@ -1,4 +1,6 @@
-Guides and Tutorials
+Linode Guides and Tutorials
 ====================
 
-All the articles featured at [linode.com/docs](https://www.linode.com/docs). Please feel free to contribute with corrections, updates, or new articles. See our [contribute](https://github.com/linode/docs/blob/master/CONTRIBUTING.md) page for more info.
+This repository contains all the tutorials featured at [linode.com/docs](https://linode.com/docs). Please feel free to contribute by suggesting document improvements, identifying corrections, or submitting updates.
+
+If you'd like to write for us, please apply via our [contributing page](https://linode.com/docs/contribute). Then, see the [Linode Writer's Formatting Guide](https://www.linode.com/docs/linode-writers-formatting-guide) for more information regarding content and formatting.

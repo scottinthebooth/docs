@@ -5,11 +5,11 @@ author:
   email: docs@linode.com
 description: 'Use the GNU Mailman software to manage email listservs.'
 keywords: 'mailman,listserv,email,postfix'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
 alias: ['email/mailman/ubuntu-9-10-karmic/']
 modified: Tuesday, May 17th, 2011
 modified_by:
-  name: Amanda Folson
+  name: Linode
 published: 'Friday, March 19th, 2010'
 title: 'Manage Email Lists with GNU Mailman on Ubuntu 9.10 (Karmic)'
 ---
